@@ -1,0 +1,4 @@
+---
+# vars file for install-packages
+appDir : hangman
+repo: https://github.com/guruprasad-afk/hangman.git

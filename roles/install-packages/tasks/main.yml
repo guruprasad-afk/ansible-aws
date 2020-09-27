@@ -1,0 +1,12 @@
+---
+# tasks file for install-packages
+# - name: Upgrade all yum packages
+#   yum:
+#     name: '*'
+#     state: latest
+- name: Install latest version of git
+  block:
+  - import_tasks: install-git.yml
+  - import_tasks: install-node.yml
+  - import_tasks: clone-repo.yml
+  - import_tasks: start-server.yml

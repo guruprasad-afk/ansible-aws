@@ -1,0 +1,5 @@
+- hosts: jumpstart
+  become: True
+  gather_facts: True
+  roles:
+   - role: install-packages

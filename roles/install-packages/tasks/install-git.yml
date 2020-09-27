@@ -1,0 +1,7 @@
+- name: Install Git
+  vars:
+    packages:
+      - git
+      - curl
+  yum:
+      name: "{{ packages }}"

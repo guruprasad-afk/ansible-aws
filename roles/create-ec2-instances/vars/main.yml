@@ -1,0 +1,10 @@
+---
+# vars file for create-ec2-instances
+region_name: 'us-east-1'
+key_name: 'guru_ansible'
+ami_id: 'ami-0005192abc40fe96c'
+instance_type: 't2.micro'
+instance_name: 'guru-auto'
+vpc_id: 'vpc-00c8f9b58ab63559f'
+random_subnet: 'subnet-0d584438acae5118d'
+target_group_name: 'ansi-targets'

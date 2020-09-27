@@ -1,0 +1,10 @@
+- name: Install pm2
+  npm: name=pm2 global=yes production=yes
+
+- name: Start APP
+  command: pm2 start server.js --name app chdir=/{{appDir}}
+  ignore_errors: yes
+
+# - name: Stop APP
+#   command: pm2 stop app chdir=/{{appDir}}
+#   ignore_errors: yes

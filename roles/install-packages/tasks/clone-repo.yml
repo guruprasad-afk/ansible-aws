@@ -1,0 +1,7 @@
+- name: Git Clone Repo
+  git: repo={{repo}} dest=/{{appDir}} update=yes force=yes accept_hostkey=yes
+
+- name: Running NPM install
+  npm: path=/{{appDir}}
+  register: npm_finished
+
